@@ -1,0 +1,957 @@
+// Dette side er laget av Mebrahtu zerizghi og Mahandri Wardhana
+*{
+  margin:0;
+  padding: 0; font-family:verdana , sans-serif;
+  box-sizing: border-box;
+
+  }
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {position: relative;
+  background-color:#f2f3f4;max-width: 100%; min-height:100%;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 60px;
+  }
+
+header  {
+  padding:30px 20px;
+  text-align: center ; width:100%;
+  color: #ffffff;
+  background-color:#4240A4; }
+
+
+.logo {
+  display: inline;
+  left: 780px;
+  top: 22px;
+	width:80px;
+  height:10px;
+	text-align: center;
+	z-index: 1;
+
+  }
+
+.logoSize {
+	height:40px;
+	}
+
+.BpOrd{
+  position:absolute;
+  right: 70px;
+  top:10px;
+	font-weight:700;
+	font-size:12px;
+	font-family: verdana,Arial,sans-serif;
+	color:white;
+
+  }
+
+.BpOrd a {
+  color:white;text-decoration:none;}
+
+.BpOrd a:hover {
+  background:#738678 ;
+  padding:10px 10px 3px 10px;
+  }
+
+
+.container {
+   position:absolute;
+   left: 95% ;
+   top:70px;
+
+ }
+.container button{
+   font-family: verdana,Arial,sans-serif;
+   background-color:white;
+   width: 70px;
+   }
+
+input[type='checkbox'] { display:none; }
+
+.topnavigation{
+  position:relative;
+  margin-top:15px;
+  z-index:999;
+  }
+
+.topnavigation ul{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+  }
+
+.topnavigation ul a{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:30px;
+	padding:0 15px;
+	font-family: verdana,Arial,sans-serif
+  }
+
+.topnavigation ul li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+  }
+
+.topnavigation ul li{
+	background:#4240A4;
+  }
+
+.topnavigation ul li:hover{
+	background:#738678;
+  }
+
+.topnavigationul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#cfcfc4;
+	padding:0;
+  }
+
+.topnavigation ul ul li{
+	float:none;
+	width:95px;
+  text-align: left;
+    }
+
+.topnavigation ul ul a{
+	line-height:120%;
+	padding:10px 10px;
+  text-align: left;
+  }
+
+.topnavigation ul ul ul{
+	top:0;
+	left:100%
+  }
+
+.topnavigation ul li:hover > ul {
+  display:block
+  }
+
+.topnavigation .icon {
+  display: none;
+}
+
+/* #main{position:relative; padding:100px 100px ;margin-left: 300px; width:70%; height:70%; */
+      /* } */
+
+/* #main{position:relative;left:10%;top:150px; padding:50px 20px 0px 20px; width:45%; height:50%; box-sizing:border 1px #bbb; */
+
+      /* } */
+#detalj ul ul li{
+  list-style-type: none;
+  position:relative;left:5em; margin:20px;
+  }
+
+#detalj ul li{
+  list-style-type: none; margin:20px;
+  }
+
+#DeEdit {
+  position:absolute;
+  right: 320px;
+	bottom:500px;
+	font-weight:700;
+	font-size:12px;
+	font-family: verdana,Arial,sans-serif;
+	color:black;
+	background:#cfcfc4;
+  padding:10px 3px 3px 3px;
+  }
+
+
+ #asidedetalj{
+    position:relative;
+	 left:-350px;
+	 top:-550px;
+	 /* width: 50%;
+   	 margin: 20px auto;
+   	 border: 1px solid #cbcbcb; */
+ }
+   /*  position:relative;
+    left:-700px;
+	top:-600px; */
+    /* width: 45%; */
+	/* height:100%;
+     border:1px solid #bbb;    */
+/* padding:65px 35px 700px 80px; } */
+     */
+
+#asidedetalj img{
+   	position:absolute; right: 15%;
+   	margin: 0;
+   	width: 200px;
+   	height: 200px;
+   }
+
+#asidedetalj form{
+	position:absolute; top: 220px;  left:-10px;
+   	width: 35%;
+   	margin:0;
+   }
+
+#footer {
+        position: fixed;
+        bottom: 0;
+		width:100%;
+		padding: 20px;
+		height: 100px;
+		clear: both;
+		background-color:gray;
+		color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-size: 100% 100%;
+    justify-content: center;
+     }
+
+#Fotconta{
+      width: auto;
+      max-width: 680px;
+      padding: 0 15px;
+
+      }
+#Fotconta #text-muted {
+      margin: 20px 0;
+
+     }
+
+@media screen and (max-width: 600px) {
+    header {
+      padding:30px 20px;
+      text-align: center ; width:100%;
+           color: #ffffff;
+           background-color:#4240A4; }
+
+
+
+	.BpOrd {
+      position:absolute;
+      right: 60px;
+			font-weight:700;
+	   font-size:10px;
+        }
+
+	.container {
+    position:absolute;
+    left: 85% ;
+		top:60px;
+      }
+
+  .container button{
+    width: 50px;
+    }
+
+	#menu a{
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+ }
+
+#menu a:hover{
+  color: tomato;
+}
+
+#menuToggle{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle
+{top:15px;
+left:15px;}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+
+  background: #ffffff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+
+  width: 200px;
+  margin: -100px 0 0 -70px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #4240A4;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+
+
+#menu li
+{
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+
+}
+
+    #main table {
+        width: 80%;
+		margin: 20px 60px;
+		}
+	#main textarea {
+	  width: 100%;
+	  height: 100%;
+	}
+	#detalj  {width:80%}
+
+    #image img { max-width:70px;
+	            max-height:70px
+
+   	             }
+
+	#asidedetalj form{
+	        position:absolute; top: 25px;  left:60%;
+         	width: 5%;
+        	margin:0;
+            }
+    .content table {  width: 80%;
+		        margin: 20px 60px;
+		       }
+
+}
+/* @media screen and (max-width: 600px) {
+  .topnavigation ul a{font-size:25px;
+                       font-weight:100;}
+  .topnavigation.responsive {position: relative;}
+  .topnavigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .topnavigation.responsive ul li  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
+@media screen and (max-width: 600px) {
+	.container {
+             right:2.5px;}
+
+	#main{margin-left: 2px;  width:100%;
+			 }
+
+	footer {position:absolute;
+         padding: 20px;
+         left:0 ;
+		 bottom:-150px;
+        }
+}
+/* @media(min-width: 601px) and (max-width:1000px){
+	header { Padding:30px 20px; text-align: center ; width:100%;
+           color: #ffffff; background-color:#4240A4; }
+
+	.logo img {position:absolute;
+               left: -200px;
+	} } */
+
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+	 header {
+    padding:30px 20px;
+    text-align: center ;
+    width:100%;
+           color: #ffffff;
+           background-color:#4240A4; }
+
+
+	.BpOrd {
+             position:absolute;
+             right: 60px;
+			 font-weight:700;
+	         font-size:10px;
+             top:40px;
+        }
+	.container {
+             position:absolute;
+             left: 93% ;
+			 top:75px;
+
+             }
+    .container button{
+               width: 50px;
+                }
+	.container {
+             right:2.5px;}
+
+	#main{margin-left: 2px;  width:100%;
+			 }
+
+	footer {position:absolute;
+         padding: 20px;
+         left:0 ;
+	     bottom:-150px;}
+
+	#menu a{
+  text-decoration: none;
+  color: #ffffff;
+
+  transition: color 0.3s ease;
+}
+
+#menu a:hover{
+  color: tomato;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+   user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle
+{top:15px;
+left:15px;}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+
+  background: #ffffff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+
+  width: 200px;
+  margin: -100px 0 0 -70px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #4240A4;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+
+}
+
+
+    /* .topnavigation ul li { display: none;}
+    .topnavigation a.icon {
+        float: right;
+        display: block;
+         } */
+	#main{position:relative; padding:0 0 ;margin-left: -20px; width:85%; height:50%;
+      }
+	#main table {
+        width: 80%;
+		margin: 20px 150px;
+		}
+	#main textarea {
+	  width: 100%;
+	  height: 100%;
+	}
+	#detalj  {width:80%}
+	#DeEdit { position:absolute; right: -4px; font-size:10px;
+	          padding:4px 3px 3px 3px;
+             }
+	#IntEdit { position:absolute; right: 90px; font-size:10px;
+	          padding:4px 3px 3px 3px; }
+
+    #image img { max-width:70px;
+	            max-height:70px
+
+   	             }
+
+	#asidedetalj form{
+	        position:absolute; top: 25px;  left:60%;
+         	width: 5%;
+        	margin:0;
+            }
+	.content table {  width: 80%;
+		        margin: 20px 100px;
+		       }
+}
+/* @media screen and (max-width: 600px) {
+  .topnavigation ul a{font-size:25px;
+                       font-weight:100;}
+  .topnavigation.responsive {position: relative;}
+  .topnavigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .topnavigation.responsive ul li  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
+@media screen and (max-width: 600px) {
+	.container {
+             right:2.5px;}
+
+	#main{margin-left: 2px;  width:100%;
+			 }
+
+	footer {position:absolute;
+         padding: 20px;
+         left:0 ;
+		 bottom:-150px;
+        }
+}
+}
+
+
+.snav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4240A4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.snav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.snav a:hover {
+    color: #A9BCF5;
+}
+
+.snav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.logout {
+  background: #4240a4;
+  background-image: -webkit-linear-gradient(top, #4240a4, #4240a4);
+  background-image: -moz-linear-gradient(top, #4240a4, #4240a4);
+  background-image: -ms-linear-gradient(top, #4240a4, #4240a4);
+  background-image: -o-linear-gradient(top, #4240a4, #4240a4);
+  background-image: linear-gradient(to bottom, #4240a4, #4240a4);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-shadow: 0px 1px 3px #5c3b5c;
+  font-family: Helvetica;
+  color: #f5f5f5;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 80px;
+  text-decoration: none;
+}
+
+
+  header h1 {
+  align:center;
+  }
+
+  footer {
+
+  padding: 40px;
+  left:0 ;
+  bottom:-250px;
+  width:100%;
+  margin: 0 auto -50px;
+  background-color:gray;
+  color:white;
+  text-align: center;
+  }
+
+  .regLogin  {
+  float :right;
+  color:white;
+  }
+
+.regLogin a {
+  color: white;
+  }
+
+@media screen and (max-height: 450px) {
+  .snav {padding-top: 15px;}
+  .snav a {font-size: 18px;}
+
+  }
+
+.scontainer {
+  float: right;
+  }
+
+ input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.scontainer button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.scontainer button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .scontainer {
+    float: none;
+  }
+  input[type=text], .scontainer button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+   input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.xop-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2% 2%;
+}
+
+.xop-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.xop-grid:after {
+  clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+  content: '';
+  display: table;
+}
+
+.xop-grid li {
+  width: 328px;
+  height: 328px;
+  display: inline-block;
+  margin: 20px;
+}
+
+
+.xop-grid li {
+  width: 328px;
+  height: 328px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.xop-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out,
+  -webkit-transform 0.3s ease-in-out;
+  -moz-transition:  0.3s ease-in-out,
+  -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out,
+  transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+  transform: scale(1.05);
+}
+
+
+.xop-img-1 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../Bilder/bilde1.jpg);
+}
+
+.xop-img-2 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../bilder/bilde2.jpg);
+}
+
+.xop-img-3 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../bilder/bilde3.jpg);
+}
+
+.xop-img-4 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../bilder/bilde4.jpg);
+}
+
+.xop-img-5 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../bilder/bilde08.jpg);
+}
+
+.xop-img-6 {
+  background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+    url(../bilder/bilde10.jpg);
+}
+
+
+.xop-info {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+}
+
+.xop-info h3 {
+  /* font-family: 'Pacifico', cursive; */
+  font-weight: 400;
+  color: #fff;
+  background-color:#4240A4;
+  font-size: 25px;
+  position:absolute; top: 291px;
+  width: 100%;
+  margin:  0 0 0 0;
+  padding: 0 0 0 0;
+  line-height: 1.5;
+
+}

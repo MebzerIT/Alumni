@@ -1,0 +1,38 @@
+//laget av Mahandri wardhana studentnr: 146980
+html {
+  font-family: sans-serif;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.containeer {
+     border-top-style: solid;
+     border-top-width: 0px;
+     padding-top: 100px;
+   }
+
+fieldset {
+  position: center;
+  background-color: #ccc;
+  border: 5px solid black;
+  border-color: #4240A4;
+}
+
+legend {
+  padding: 10px;
+  background-color: #4240A4;
+  color: black;
+}
+
+
+
+.item {
+  white-space: nowrap;display:inline
+}
+
+.checkboxes {
+    columns: 4 8em;
+}
